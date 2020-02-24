@@ -1,21 +1,18 @@
-var fs = require('fs');
-//var http = require('http');
-var https = require('https');
-var privateKey  = fs.readFileSync('sslcert/server.key', 'utf8');
-var certificate = fs.readFileSync('sslcert/server.crt', 'utf8');
+var express = require('express')
+var cors = require('cors')
+var bodyParser = require('body-parser')
+var app = express()
+var port = process.env.PORT || 3000
 
-// Define your key and cert
+app.use(bodyParser.json())
+app.use(cors())
+app.use(
+bodyParser.urlencoded({extended: false})
+	)
 
-var credentials = {key: privateKey, cert: certificate};
-var express = require('express');
-var app = express();
+var Users = require("./routes/Users")
+app.use("/users", Users)
 
-// your express configuration here
-
-//var httpServer = http.createServer(app);
-var httpsServer = https.createServer(credentials, app);
-
-// Using port 8080 for http and 8443 for https 
-
-//httpServer.listen(8080);
-httpsServer.listen(8443);
+app.listen(port, function(){
+	console.log("Server is running port" + port)
+})
