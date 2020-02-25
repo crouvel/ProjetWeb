@@ -1,0 +1,24 @@
+{
+  "name": "projetweb",
+  "version": "1.0.0",
+  "description": "ProjetWeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crouvel/ProjetWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crouvel/ProjetWeb/issues"
+  },
+  "homepage": "https://github.com/crouvel/ProjetWeb#readme",
+  "dependencies": {
+    "ng": "0.0.0",
+    "sequelize": "^5.21.5"
+  },
+  "devDependencies": {}
+}
