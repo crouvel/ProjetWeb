@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 const app = Express();
 
 const userRoute = require('./routes/User.js')
-const sequelize = new Sequelize('prj', 'root', 'YES', {
+const sequelize = new Sequelize('prj', 'root', 'Ph9Iw3Nt4qaAiePj', {
   host: 'localhost',
   dialect: 'mysql' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
 });
