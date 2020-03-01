@@ -26,8 +26,8 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use('/user', userRoute);
 
-app.get('/status', (req, res) => {
-	res.send('Hello World!')
+app.post('/register', (req, res) => {
+	res.send(`Hello ${req.body.email} ! Your user was registered !`);
 });
 
 
