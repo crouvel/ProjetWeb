@@ -1,7 +1,9 @@
 const Express = require('express');
 const { Sequelize } = require('sequelize'); 
-const PORT = process.env.PORT || 3000;
 const app = Express();
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const morgan = require('morgan');
 
 const userRoute = require('./routes/User.js')
 const sequelize = new Sequelize('prj', 'root', 'Ph9Iw3Nt4qaAiePj', {
@@ -19,7 +21,14 @@ try {
   console.error('Unable to connect to the database:', error);
 }
 
+app.use(morgan('combined'));
+app.use(bodyParser.json());
+app.use(cors());
 app.use('/user', userRoute);
 
+app.get('/status', (req, res) => {
+	res.send('Hello World!')
+});
 
-app.listen(PORT);
+
+app.listen(process.env.PORT || 3000);
