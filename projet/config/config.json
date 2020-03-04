@@ -1,25 +1,25 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "database_development_clare",
-    "host": "127.0.0.1",
+    "username": "b540f1accf28a8",
+    "password": "d7de8a86",
+    "database": "heroku_802e11dc5cef23a",
+    "host": "eu-cdbr-west-02.cleardb.net",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
-    "username": "root",
-    "password": "root",
-    "database": "database_test_clare",
-    "host": "127.0.0.1",
+    "username": "b540f1accf28a8",
+    "password": "d7de8a86",
+    "database": "heroku_802e11dc5cef23a",
+    "host": "eu-cdbr-west-02.cleardb.net",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": "root",
-    "database": "database_production_clare",
-    "host": "127.0.0.1",
+    "username": "b540f1accf28a8",
+    "password": "d7de8a86",
+    "database": "heroku_802e11dc5cef23a",
+    "host": "eu-cdbr-west-02.cleardb.net",
     "dialect": "mysql",
     "operatorsAliases": false
   }
