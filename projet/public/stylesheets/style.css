@@ -21,10 +21,9 @@ a {
 #button{
   text-align: center;
   height: 25px;
-  border-width: 0px;
-  border-radius: 0px;
+  border-color: #191970;
 }
 
 #espace {
-  height : 30px;
+  height : 60px;
 }
