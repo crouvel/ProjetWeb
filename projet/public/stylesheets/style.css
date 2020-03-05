@@ -21,4 +21,5 @@ a {
 #button{
   text-align: center;
   height: 25px;
+  border-width: 0px;
 }
