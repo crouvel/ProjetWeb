@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
 var registerRouter = require('./routes/register');
 var songUploadRouter = require('./routes/songUpload');
-var homeRouter = require('./routes/home');
+var homeRouter = require('./routes/Home');
 
 var app = express();
 
