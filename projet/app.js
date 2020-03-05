@@ -28,7 +28,7 @@ app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/songUpload', songUploadRouter);
-app.use('/home', homeRouter);
+app.use('/Home', homeRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
