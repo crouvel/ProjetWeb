@@ -1,9 +1,18 @@
 include layout.jade
 body(id="black")
-  h1 Please upload your song here
+  h1 Please upload your song here.
   .input-group.mb-3
     .custom-file
       input#inputGroupFile02.custom-file-input(type='file')
       label.custom-file-label(for='inputGroupFile02', aria-describedby='inputGroupFileAddon02') Choose file
     .input-group-append
       span#inputGroupFileAddon02.input-group-text Upload
+    form(id = "form")
+        .form-group
+            label(for='exampleInputSongt') Song title
+            input#exampleInputSongt.form-control(type='songt', aria-describedby='songtHelp')
+            small#songtHelp.form-text.text-muted Write the title of the song here.
+        .form-group
+            label(for='exampleInputSonga') Song album
+            input#exampleInputSonga.form-control(type='songa')
+        button(id="btn").btn(type='submit') Add Song
