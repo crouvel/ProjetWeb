@@ -5,21 +5,21 @@ body(id="black")
   
   h1 Please upload your song here.
  
-  p
-    .input-group.mb-3
-      .custom-file
-        input#inputGroupFile02.custom-file-input(type='file')
-        label.custom-file-label(for='inputGroupFile02', aria-describedby='inputGroupFileAddon02') Choose file
-      .input-group-append
-        span#inputGroupFileAddon02.input-group-text Upload
-  p  
-    form(id = "form")
-        .form-group
-            label(for='exampleInputSongt') Song title
-            input#exampleInputSongt.form-control(type='songt', aria-describedby='songtHelp')
-            small#songtHelp.form-text.text-muted Write the title of the song here.
-        .form-group
-            label(for='exampleInputSonga') Song album
-            input#exampleInputSonga.form-control(type='songa' aria-describedly='songaHelp')
-            small#songaHelp.form-text.text-muted Write the Album of the song here if it is not from a single.
-        button(id="btn").btn(type='submit') Add Song
+    p
+      .input-group.mb-3
+        .custom-file
+          input#inputGroupFile02.custom-file-input(type='file')
+          label.custom-file-label(for='inputGroupFile02', aria-describedby='inputGroupFileAddon02') Choose file
+        .input-group-append
+          span#inputGroupFileAddon02.input-group-text Upload
+    p  
+      form(id = "form")
+          .form-group
+              label(for='exampleInputSongt') Song title
+              input#exampleInputSongt.form-control(type='songt', aria-describedby='songtHelp')
+              small#songtHelp.form-text.text-muted Write the title of the song here.
+          .form-group
+              label(for='exampleInputSonga') Song album
+              input#exampleInputSonga.form-control(type='songa' aria-describedly='songaHelp')
+              small#songaHelp.form-text.text-muted Write the Album of the song here if it is not from a single.
+          button(id="btn").btn(type='submit') Add Song
