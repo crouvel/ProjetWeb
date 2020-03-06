@@ -56,3 +56,8 @@ a {
   font-style: bold;
   text-align: center;
 }
+
+#black {
+  background-color: black;
+  color: white;
+}
