@@ -10,18 +10,18 @@ const sequelize = new Sequelize('heroku_802e11dc5cef23a', 'b540f1accf28a8', 'd7d
 
 module.exports = {
    register: function(req, res) {
-        var email = req.User.email;
-        var first_name = req.User.first_name;
-        var last_name = req.User.last_name;
-        var password = req.User.password;
+        var email = req.body.email;
+        var first_name = req.body.first_name;
+        var last_name = req.body.last_name;
+        var password = req.body.password;
 
         if(email == null || first_name == null || password == null){
             return res.status(400).json({'error': 'missing parameters'});
-        }else{
+        }
         
-        User.findOne({
+        user.findOne({
             attributes: ['email'],
-            where: { email: email}
+            where: {where: sequelize.where(sequelize.fn('email', sequelize.col('user')), email)}
         })
         .then(function(userFound){
             if(!userFound){
@@ -48,9 +48,9 @@ module.exports = {
         .catch(function(err){
             return res.status(500).json({'error': 'unable to verify user'});
         })
-    }
+   
     
-    },
+},
    login: function(req, res) {
 
    }
