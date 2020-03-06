@@ -16,5 +16,6 @@ body(id="black")
             small#songtHelp.form-text.text-muted Write the title of the song here.
         .form-group
             label(for='exampleInputSonga') Song album
-            input#exampleInputSonga.form-control(type='songa')
+            input#exampleInputSonga.form-control(type='songa' aria-describedly='songaHelp')
+            small#songaHelp.form-text.text-muted Write the Album of the song here if it is not from a single.
         button(id="btn").btn(type='submit') Add Song
