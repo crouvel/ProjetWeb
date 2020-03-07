@@ -104,3 +104,8 @@ a {
 #label {
   width: 200px;
 }
+
+#list {
+  color: white;
+  font-size: 40px;
+}
