@@ -12,7 +12,7 @@ var loginRouter = require('./routes/login');
 var registerRouter = require('./routes/register');
 var songUploadRouter = require('./routes/songUpload');
 var libraryRouter = require('./routes/library');
-var playlistRouter = require ('/routes/playlist');
+var playlistRouter = require ('./routes/playlist');
 const sequelize = new Sequelize('heroku_802e11dc5cef23a', 'b540f1accf28a8', 'd7de8a86', {
   host: 'eu-cdbr-west-02.cleardb.net',
   dialect: 'mysql' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
