@@ -1,0 +1,13 @@
+include layout.jade
+body(id="blackg")
+    h1(id="welcome")= "Create a new playlist."
+    p(id= "espace1")
+    form(id = "form")
+        .form-group
+            label(for='exampleInputPlaylistTitle1') Playlist Title
+            input#exampleInputPlaylistTitle1.form-control(type='Playlist title')
+        .form-group
+            label(for='examplePlaylistd1') Playlist Description
+            textarea#exampleFormControlPlaylistd1.form-control(rows='3')
+        
+        button(id="btn").btn(type='submit') Create
