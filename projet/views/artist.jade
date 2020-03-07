@@ -9,10 +9,10 @@ body(id="blackg")
   p(id="play")
     .btn-group.btn-group-toggle(data-toggle='buttons')
      label(id="label").btn.btn-secondary.active
-        input#option1(type='radio', name='options', checked='')
+        input.btn(type='radio', name='options', checked='', onclick="self.location.href='/artist'")
         |  Add an Artist
      label(id="label").btn.btn-secondary.active
-        input#option2(type='radio', name='options')
+        input.btn(type='radio', name='options', onclick="self.location.href='/artist'")
         |  Update an Artist
 
            

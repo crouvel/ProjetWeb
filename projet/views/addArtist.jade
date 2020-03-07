@@ -1,0 +1,15 @@
+include layout.jade
+body(id="gr")
+    h1(id="welcome")= "Add an artist here."
+    p(id= "espace1")
+    form(id = "form")
+        .form-group
+            label(for='exampleInputArt1Name') Artist first name
+            input#exampleInputArt1Name.form-control(type='Artist first name')
+         .form-group
+            label(for='exampleasn1') Artist Stage name
+            input#exampleInputasn1.form-control(type='Artist stage name')
+        
+    p(id="espace4")
+   
+    button(id="button1").btn.btn-lg.btn-block(type='button', style='background-color: #111111', onclick="self.location.href='/artist'" ) Add Album
