@@ -82,7 +82,9 @@ a {
 #menu {
   text-align : center;
 }
-
+#menu:hoover {
+  color: black;
+}
 #menu1 {
   color: rgb(24, 228, 24);
   font-size: 50px;
