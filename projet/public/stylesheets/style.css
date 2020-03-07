@@ -96,3 +96,10 @@ a {
 #blackg{
   background-color: #111111;
 }
+
+#espace3 {
+  height: 10px;
+}
+#play {
+  text-align: center;
+}
