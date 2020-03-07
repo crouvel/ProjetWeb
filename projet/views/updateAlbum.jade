@@ -1,0 +1,16 @@
+include layout.jade
+body(id="gr")
+    h1(id="welcome")= "Update one of your palbum here."
+    p(id= "espace1")
+    form(id = "form")
+        .form-group
+            label(for='exampleInputAlbumName1') Album new Name
+            input#exampleInputAlbumName1.form-control(type='Album new name')
+         .form-group
+            label(for='exampleInputAlbumd1') Album new Date
+            input#exampleInputAlbumd1.form-control(type='Album new date')
+        
+    p(id="espace4")
+   
+    button(id="button1").btn.btn-lg.btn-block(type='button', style='background-color: #111111', onclick="self.location.href='/album'" ) Update My Album
+    button(id="button1").btn.btn-lg.btn-block(type='button', style='background-color: #B22222', onclick="self.location.href='/album'") Delete My Album
