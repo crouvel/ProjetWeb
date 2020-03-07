@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var Sequelize = require('sequelize');
 var bodyParser = require('body-parser');
-var apiRouter = require('./apiRouter');
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
@@ -43,7 +43,7 @@ app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/songUpload', songUploadRouter);
 app.use('/library', libraryRouter);
-app.use('/api/', apiRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
