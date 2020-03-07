@@ -1,0 +1,20 @@
+include layout.jade
+body(id="register")
+  p(id="pbtn")
+    button(id="logout1").btn(type='submit' onclick="self.location.href='/'") Log out
+
+  h1(id="welcome") Your Artists.
+  p(id="espace3")
+  
+  p(id="play")
+    .btn-group.btn-group-toggle(data-toggle='buttons')
+     label(id="label").btn.btn-secondary.active
+        input#option1(type='radio', name='options', checked='')
+        |  Add an Artist
+     label(id="label").btn.btn-secondary.active
+        input#option2(type='radio', name='options')
+        |  Update an Artist
+
+           
+
+ 
