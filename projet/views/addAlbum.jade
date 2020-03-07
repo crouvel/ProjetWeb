@@ -1,0 +1,16 @@
+include layout.jade
+body(id="gr")
+    h1(id="welcome")= "Update one of your album here."
+    p(id= "espace1")
+    form(id = "form")
+        .form-group
+            label(for='exampleInputAlbum1Name1') Album Name
+            input#exampleInputAlbum1Name1.form-control(type='Album name')
+         .form-group
+            label(for='exampleInputAlbum1d1') Album Date
+            input#exampleInputAlbum1d1.form-control(type='Album date')
+        
+    p(id="espace4")
+   
+    button(id="button1").btn.btn-lg.btn-block(type='button', style='background-color: #111111', onclick="self.location.href='/album'" ) Add Album
+   
