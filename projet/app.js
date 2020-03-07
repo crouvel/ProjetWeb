@@ -15,6 +15,7 @@ var libraryRouter = require('./routes/library');
 var playlistRouter = require ('./routes/playlist');
 var artistRouter = require('./routes/artist');
 var albumRouter = require('./routes/album');
+var accountRouter = require('/routes/accountRouter');
 const sequelize = new Sequelize('heroku_802e11dc5cef23a', 'b540f1accf28a8', 'd7de8a86', {
   host: 'eu-cdbr-west-02.cleardb.net',
   dialect: 'mysql' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
@@ -49,6 +50,7 @@ app.use('/library', libraryRouter);
 app.use('/playlist', playlistRouter);
 app.use('/album', albumRouter);
 app.use('/artist', artistRouter);
+app.use('/account', accountRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
