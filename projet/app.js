@@ -55,7 +55,7 @@ app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/songUpload', songUploadRouter);
 app.use('/library', libraryRouter);
-app.use('/library/*', playlistRouter);
+app.use('/playlist', playlistRouter);
 app.use('/album', albumRouter);
 app.use('/artist', artistRouter);
 app.use('/account', accountRouter);
